@@ -11,9 +11,14 @@ javascript functions to help with arrays
   `npm install @iannazzi/array-help`
 
 ## Usage
-
-  
-
+    require(@iannazzi/array-help)
+    import {is_array} from array-help
+    
+    //or use the browser ready script
+    <script src="dist/array-help.umd.js"></script>
+    let a = 'string';
+    let c = array_help.is_array(a);
+    console.log(c);
 
 ## Tests
 
@@ -25,7 +30,7 @@ In lieu of a formal style guide, take care to maintain the existing coding style
 
 
 
-## some info that helped me get this done...
+## Some info that helped me get this done...
 
 https://codeburst.io/how-to-create-and-publish-your-first-node-js-module-444e7585b738
 
