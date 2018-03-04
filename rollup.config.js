@@ -25,7 +25,6 @@ export default [
 	// `file` and `format` for each target)
 	{
 		input: 'src/array_help.js',
-		external: ['ms'],
 		output: [
 			{ file: pkg.main, format: 'cjs' },
 			{ file: pkg.module, format: 'es' }
