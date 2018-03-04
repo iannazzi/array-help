@@ -5,17 +5,26 @@
   "module": "dist/array-help.esm.js",
   "browser": "dist/array-help.umd.js",
   "devDependencies": {
+    "coveralls": "^3.0.0",
+    "istanbul": "^0.4.5",
+    "mocha": "^5.0.1",
     "rollup": "^0.50.0",
     "rollup-plugin-commonjs": "^8.2.6",
     "rollup-plugin-node-resolve": "^3.0.0"
   },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/iannazzi/array-help.git"
+  },
+  "license": "MIT",
   "scripts": {
     "build": "rollup -c",
     "dev": "rollup -c -w",
-    "test": "node test/test.js",
-    "pretest": "npm run build"
+    "test": "mocha ./test/*",
+    "pretest": "npm run build",
+    "cover": "node_modules/istanbul/lib/cli.js cover node_modules/mocha/bin/_mocha -- -R spec test/*"
   },
-  "files":[
+  "files": [
     "dist"
   ]
 }
