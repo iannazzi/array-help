@@ -6,6 +6,8 @@ javascript functions to help with arrays
 
 [![Build Status](https://travis-ci.org/iannazzi/array-help.svg?branch=master)](https://travis-ci.org/iannazzi/array-help)
 
+[![Coverage Status](https://coveralls.io/repos/iannazzi/array-help/badge.svg)](https://coveralls.io/r/iannazzi/array-help)
+
 ## Installation
 
   `npm install @iannazzi/array-help`
