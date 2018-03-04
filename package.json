@@ -1,6 +1,6 @@
 {
   "name": "@iannazzi/array-help",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "dist/array-help.cjs.js",
   "module": "dist/array-help.esm.js",
   "browser": "dist/array-help.umd.js",
