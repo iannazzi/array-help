@@ -10,11 +10,19 @@ javascript functions to help with arrays
   `npm install @iannazzi/array-help`
 
 ## Usage
-    require(@iannazzi/array-help)
-    import {is_array} from array-help
+    with a bundler like webpack:
+    let array_help = require('@iannazzi/array-help');
+    let a = [];
+    let c = array_help.is_array(a);
+    console.log(c);
+    
+    import {is_array} from '@iannazzi/array-help';
+    let b = {};
+    let d = is_array(b);
+    console.log(d);
     
     //or use the browser ready script
-    <script src="dist/array-help.umd.js"></script>
+    <script src="../node_modules/@iannazzi/array-help/dist/array-help.umd.js"></script>
     let a = 'string';
     let c = array_help.is_array(a);
     console.log(c);
